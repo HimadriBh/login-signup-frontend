@@ -5,9 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+.login-signup{
+ width: 100%;
+ height: 100%;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-signup-container{
+  width: 320px;
+  display: flex;
+  margin: 3rem auto;
+  padding: 0.5rem 2rem 3rem;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.login-signup-container > .title{
+  text-align: center;
+  color: #f50057;
+  margin-bottom: 3rem;
+}
+
+.login-signup-container > .MuiFormControl-root{
+  margin-bottom: 1rem;
+}
+.login-signup-container .MuiInputBase-input:focus{
+  border-bottom-color: #f50057; 
+  outline: none;
+}
+.login-signup-container .MuiInput-underline:after{
+  border-bottom: 2px solid #f50057; 
+}
+
+.login-signup-container .MuiFormLabel-root.Mui-focused, .MuiFormLabel-root.Mui-focused{
+  color: #f50057; 
+}
+
+.login-signup-container > button{
+  margin-top: 2rem;
+}
+
+.errorMsg{
+  font-size: 0.9rem;
+  color: crimson;
+  /* text-align: center; */
 }
